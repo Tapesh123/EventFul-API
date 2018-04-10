@@ -1,5 +1,12 @@
 function tplawesome(e,t){res=e;for(var n=0;n<t.length;n++){res=res.replace(/\{\{(.*?)\}\}/g,function(e,r){return t[n][r]})}return res}
-
+$(document).ready(function(){
+  $("#hide").click(function(){
+      $("#content").hide();
+  });
+  $("#show").click(function(){
+      $("#content").show();
+  });
+});
 $(function() {
 var $eventLocation = $("#event-location");
 var $eventKeyword = $("#event-keyword");
@@ -93,4 +100,6 @@ function formatAMPM(date) {
 }
 
 conductSearch();
+
+
 }); // end document loaded
