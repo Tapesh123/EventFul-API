@@ -53,7 +53,7 @@ function receiveEvents(events) {
 
   events.forEach(function(event){
     var $li = $('<li class="event-item"/>').appendTo($ul);
-    var event_img = event.image ? event.image.medium.url : "http://s1.evcdn.com/images/block250/fallback/event/categories/music/music_default_1.jpg";
+    var event_img = event.image ? event.image.large.url : "http://s1.evcdn.com/images/block250/fallback/event/categories/music/music_default_1.jpg";
     var eventDate = new Date(event.start_time);
 
     $.get("tpl/item.html", function(data) {
