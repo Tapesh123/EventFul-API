@@ -6,6 +6,7 @@ $(document).ready(function(){
   $("#show").click(function(){
       $("#content").show();
   });
+  
 });
 $(function() {
 var $eventLocation = $("#event-location");
